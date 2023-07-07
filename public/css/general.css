@@ -1,0 +1,34 @@
+/*Variables Colores y fuentes*/
+*{
+    box-sizing: border-box;
+}
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+    --tipografiaRoboto: 'Roboto', sans-serif;
+    --textCuerposDeTexto: 12px;
+    --textTitulares_BasadoEnTuUltimaVisita: 24px;
+    --textPrecios: 18px;
+    --textDescuentos: 16px;
+    --textDescripciones: 16px;
+}
+
+body {
+    font-family: var(--tipografiaRoboto);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100vw;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}

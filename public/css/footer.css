@@ -1,0 +1,32 @@
+/*footer*/
+footer{
+    background-color: #ffff;
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+}
+
+.home__footer--titulo{
+    text-align: center;
+    color: var(--GrisOscuro);
+    margin: 0;
+}
+.home__footer--texto{
+    text-align: center;
+    color: var(--GrisOscuro);
+    font-size: var(--textCuerposDeTexto);
+    margin: 0;
+    padding-bottom: 40px;
+}
+.home__footer--copi{
+    text-align: left;
+    color: var(--GrisOscuro);
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-size: var(--textCuerposDeTexto);
+}
+.home__footer--logos{
+    text-align: center;
+    color: var(--Celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}

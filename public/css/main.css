@@ -1,0 +1,24 @@
+/*main*/
+main{
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.home__main{
+    padding-bottom: 40px;
+}
+.home__main__producto__img{
+    width: 100%;
+}
+.home__main__producto__precio{
+    font-size: var(--textPrecios);
+}
+.home__main__producto__descuento{
+    font-size: var(--textDescuentos);
+    color: var(--Verde)
+}
+.home__main__producto__descripcion{
+    font-size: var(--textDescripciones);
+    margin: 0;
+    padding: 2px;
+}
