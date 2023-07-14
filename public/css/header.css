@@ -46,6 +46,7 @@ header{
 }
 
 .home__header__banner{
+    display: none;
     width: 100vw;
     height: 30vw;
     padding: 0;
@@ -54,4 +55,25 @@ header{
 .home__header__banner__img{
     width: 100vw;
     height: 30vw;
+}
+
+@media (min-width: 481px) {
+    /* header */
+    .home__header__burgermenu__box{
+      font-size: var(--fontSizeCuerposDeTexto);
+      margin-bottom: 20px;
+      display: block;
+    }
+  
+    .home__header__burgermenu__box ul li a {
+      color: black;
+    }
+    .home__header__nav--menu {
+      font-size: var(--fontSizeCuerposDeTexto);
+      display: block;
+    }
+    .home__header__box--burger-menu {
+      padding-bottom: 15px;
+      display: none;
+    }
 }
