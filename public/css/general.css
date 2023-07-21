@@ -1,34 +1,28 @@
-/*Variables Colores y fuentes*/
-*{
-    box-sizing: border-box;
-}
+/* font-family: 'Roboto', sans-serif; */
+
 :root {
-    --Amarillo: #EAC926;
-    --Azul: #03264C;
-    --Celeste: #1259c3;
-    --GrisOscuro: #666;
-    --GrisClaro: #ebebeb;
-    --Verde: #39b54a;
-    --tipografiaRoboto: 'Roboto', sans-serif;
-    --textCuerposDeTexto: 12px;
-    --textTitulares_BasadoEnTuUltimaVisita: 24px;
-    --textPrecios: 18px;
-    --textDescuentos: 16px;
-    --textDescripciones: 16px;
+  --colorAmarillo: #eac926;
+  --colorAzul: #03264c;
+  --colorCeleste: #1259c3;
+  --colorGrisOscuro: #666;
+  --colorGrisClaro: #ebebeb;
+  --colorVerde: #39b54a;
 }
 
-body {
-    font-family: var(--tipografiaRoboto);
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    width: 100vw;
+body.home {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--colorGrisClaro);
 }
 
-ul {
-    padding-left: 0;
-    margin: 0;
+h3 {
+  text-align: left;
+  color: var(--colorGrisOscuro);
 }
-
-ul li {
-    list-style: none;
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }

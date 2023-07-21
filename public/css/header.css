@@ -1,79 +1,156 @@
-/*header*/
-header{
-    background-color: var(--Amarillo);
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+.home_header {
+  background-color: var(--colorAmarillo);
+  font-size: 12px;
+  padding-bottom: 10px;
 }
-.home__header__logo{
-    width: 8rem;
-    margin: 1rem;
-    padding-top: 1rem;
-    padding-left: 0rem;
-}
-.home__header__buscador__var{
-    margin-left: 5px;
-}
-.home__header__buscador__logo{
-    background-color: white;
-    padding: 2px;
-    margin-left: 5px;
-    width: max-content;
-    border-radius: 20%;
-    border: solid 1px var(--GrisOscuro);
-}
-.home__header__cuotas{
-    text-align: center;
-    font-size: var(--textCuerposDeTexto);
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.home__header__nav{
-    font-size: var(--textCuerposDeTexto);
-}
-.home__header__lognav{
-    padding-top: 12px;
-    font-size: var(--textCuerposDeTexto);
-}
-.home__header__burgermenu__box{
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-    width: 100vw;
-    border-radius: 20%;
-    background-color: var(--Celeste);
-    color: white;
-    border-radius: 10%;
-    padding: 10px 10px 10px 10px;
+.home_header_encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.home__header__banner{
-    display: none;
-    width: 100vw;
-    height: 30vw;
-    padding: 0;
-    margin: 0;
+.home_header_encabezado--barra {
+  position: relative;
+  padding: 15px;
+  padding-left: 5px;
+  width: 50%;
 }
-.home__header__banner__img{
-    width: 100vw;
-    height: 30vw;
+.home_header_encabezado--btn i {
+  position: absolute;
+  top: 30px;
+  right: 19px;
+  font-size: 16px;
+  border-left: 1px solid var(--colorGrisOscuro);
 }
+
+.home_header_encabezado--logo {
+  width: 50%;
+
+  padding: 15px;
+  padding-right: 5px;
+}
+.home_header_encabezado--compra--p {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  padding-bottom: 15px;
+}
+.home_header_encabezado--form--input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 95%;
+}
+.home_header_boton--busqueda {
+  margin-left: 0px;
+  font-size: 12px;
+  padding: 0;
+  background-color: var(--colorGrisClaro);
+  border: solid 1px var(--colorGrisOscuro);
+  border-radius: 15%;
+}
+.home_header--menu {
+  display: none;
+}
+
+body.home .home_header--menu a,
+body.home .home_header--menu ul {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  padding: 0;
+}
+
+body.home .home_header_menu--login li a {
+  padding-right: 5px;
+}
+.home_header_burger--menu a:visited {
+  color: var(--colorGrisClaro);
+}
+body.home .home_header_burger--menu {
+  color: var(--colorGrisClaro);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+body.home .home_header_burger--menu i {
+  background-color: var(--colorCeleste);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* medida en tablets */
 
 @media (min-width: 481px) {
-    /* header */
-    .home__header__burgermenu__box{
-      font-size: var(--fontSizeCuerposDeTexto);
-      margin-bottom: 20px;
-      display: block;
-    }
-  
-    .home__header__burgermenu__box ul li a {
-      color: black;
-    }
-    .home__header__nav--menu {
-      font-size: var(--fontSizeCuerposDeTexto);
-      display: block;
-    }
-    .home__header__box--burger-menu {
-      padding-bottom: 15px;
-      display: none;
-    }
+  /* header */
+  .home__header--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home_header_encabezado--compra--p {
+    padding: 0;
+  }
+  .home_header--menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .home_header--menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 3px;
+    letter-spacing: -0.5px;
+  }
+
+  .home_header_burger--menu {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  /* header */
+  .home__header--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home_header_encabezado {
+    width: 70%;
+  }
+  .home_header_encabezado--compra--p {
+    padding: 0;
+    width: 30%;
+  }
+  .home_header--menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .home_header--menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 15px;
+    margin-right: 10px;
+    letter-spacing: 0px;
+  }
+
+  .home_header_burger--menu {
+    display: none;
+  }
+}
+
+/* medida en pc */
+@media (min-width: 769px) {
+  .home_header--menu ul {
+    gap: 15px;
+    margin: 15px;
+    margin-right: 20px;
+  }
 }
