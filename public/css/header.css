@@ -52,7 +52,12 @@
   border-radius: 15%;
 }
 
-body.home .home_header--menu a,
+body.home .home_header--menu a{
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  padding: 0;
+}
 body.home .home_header--menu ul {
   text-decoration: none;
   color: black;
