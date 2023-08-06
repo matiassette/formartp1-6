@@ -4,18 +4,29 @@
 .home--main h3 {
   margin-left: 5%;
 }
+
 .home__main__article {
   margin: 0 auto 10px;
   color: var(--colorGrisOscuro);
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
-.home_main_visita,
+.home_main_visita{
+  width: 90%;
+  margin: auto;
+}
 .home_main_ofertas {
   width: 90%;
   margin: auto;
 }
-.home_main_visita--precio,
+.home_main_visita--precio{
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--colorGrisOscuro);
+  width: 30%;
+}
 .home_main_ofertas--precio {
   font-size: 18px;
   line-height: 24px;
@@ -23,7 +34,15 @@
   color: var(--colorGrisOscuro);
   width: 30%;
 }
-.home_main_visita--descuento,
+.home_main_visita--descuento{
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--colorVerde);
+  text-align: center;
+  padding-bottom: 5px;
+  width: 70%;
+}
 .home_main_ofertas--descuento {
   font-size: 16px;
   line-height: 24px;
@@ -52,15 +71,15 @@
   display: block;
   font-size: 16px;
   padding: 3px;
-  width: 25px;
-  height: 25px;
-  border: 1px solid #39b54a;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0a5a15;
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
   right: 20px;
   top: -15px;
-  color: #39b54a;
+  color: #0a5a15;
   text-align: center;
 }
 
@@ -68,9 +87,10 @@
   color: var(--colorGrisOscuro);
 }
 
-/* medida en tablets */
 
-@media (min-width: 481px) {
+/* media query para tablets con corte de 480 */
+
+@media (min-width: 480px) {
   /* header */
   .home_header_encabezado--btn i {
     position: absolute;
@@ -80,17 +100,26 @@
     border-left: 1px solid var(--colorGrisOscuro);
   }
   /* main */
-  .home_main_visita,
+  .home_main_visita{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
   .home_main_ofertas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    align-items: flex-start;
   }
   .home_main--descripcion {
     display: block;
   }
-  .home_main_ofertas--descuento,
+  .home_main_ofertas--descuento{
+    text-align: center;
+  }
   .home_main_visita--descuento {
     text-align: center;
   }
@@ -100,7 +129,35 @@
     margin: 0 auto 10px;
     color: var(--colorGrisOscuro);
     background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .home_main--descripcion {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  .home__main__article:hover .home_main--descripcion {
+    height: 20px;
+  }
+
+  .home_main__article {
+    transition: all 1s ease;
+  }
+  .home__main__article:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0);
+  }
+  .home__main__section--article i:hover {
+    animation: rotate 2s linear;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
   /* footer */
   .home_footer_seguridad {
@@ -113,8 +170,8 @@
     justify-content: center;
   }
 }
-/* medida en pc */
-@media (min-width: 769px) {
+/* desktop se realiza corte en 775*/
+@media (min-width: 775px) {
   /* header */
   .home_header_encabezado--btn i {
     position: absolute;
@@ -130,11 +187,18 @@
   .home__main__article {
     width: 22%;
   }
-  .home_main_visita--descuento,
+  .home_main_visita--descuento{
+    text-align: right;
+  }
   .home_main_ofertas--descuento {
     text-align: right;
   }
+
   /* footer */
+  .home__footer--gifter {
+    display: flex;
+    flex-direction: row;
+  }
   .home_footer_seguridad {
     display: flex;
     flex-direction: column;

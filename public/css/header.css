@@ -51,9 +51,6 @@
   border: solid 1px var(--colorGrisOscuro);
   border-radius: 15%;
 }
-.home_header--menu {
-  display: none;
-}
 
 body.home .home_header--menu a,
 body.home .home_header--menu ul {
@@ -81,7 +78,16 @@ body.home .home_header_burger--menu i {
   border-radius: 5px;
   font-size: 16px;
 }
-/* medida en tablets */
+/*transition del menu burger */
+.home_header--menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 2s ease;
+}
+.showMenu {
+  height: auto;
+}
+/* media q tablets */
 
 @media (min-width: 481px) {
   /* header */
@@ -98,7 +104,11 @@ body.home .home_header_burger--menu i {
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
+    height: auto;
+    transition: none;
+    cursor: pointer;
   }
+
   .home_header--menu ul {
     display: flex;
     flex-direction: row;
@@ -146,7 +156,7 @@ body.home .home_header_burger--menu i {
   }
 }
 
-/* medida en pc */
+/* media desktop */
 @media (min-width: 769px) {
   .home_header--menu ul {
     gap: 15px;

@@ -38,3 +38,6 @@ body.home .home_footer_p {
   max-width: 420px;
   margin: auto;
 }
+.home_footer article i:hover {
+  color: var(--colorAmarillo);
+}

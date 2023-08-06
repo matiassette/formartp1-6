@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registro</title>
+    <title>Register</title>
     <script src="https://kit.fontawesome.com/16018bb78d.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link rel="shortcut icon" href="/images/logo-mercado-liebre.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+
+<body class="home">
     <header class="home_header">
         <div class="home__header--box">
             <div class="home_header_encabezado">
@@ -48,110 +48,106 @@
             <a href="/"><i class="fas fa-bars"></i></a>
         </div>
     </header>
-    
-    <section>
-        <h3>Registro</h3>
-            <form action="/" method="post">
-                <div>
-                    <h4>Foto de usuario</h4>
+
+    <main class="register__main">
+
+        <form class="register__main--form" action="/my-handling-form-page" method="post">
+
+            <ul class="register__main--ulForm">
+                <li class="register__main--fotoPerfil">
+                    <label for="file">Foto de usuario:</label><br>
                     <input type="file" name="file" id="file" accept="image/*" multiple>
-                </div>
-                <div>
-                    <p>
-                        <label for="nombre">nombre y apellido</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="nombre y apellido"></input>
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="nombre">nombre de usuario</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="nombre de usuario"></input>
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="nombre">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="E-mail"></input>
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="nombre">fecha de nacimiento</label>
-                        <input type="date" id="user__date" name="user__date">
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="nombre">domicilio</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="domicilio"></input>
-                        
-                    </p>
-                </div>
-            <h4>perfil de usuario</h4>
-            <input name="" type="radio" value="" />Comprador 
-            <input name="" type="radio" value="" />Vendedor
-            
-            <li>
-                <h4>intereses</h4>
-                <label for="electro">Electro</label>
-                <input type="checkbox" id="electro" name="categorias" value="electro">
-                <label for="moda">Moda</label>
-                <input type="checkbox" id="moda" name="categorias" value="moda">
-                <label for="hogar">Hogar</label>
-                <input type="checkbox" id="hogar" name="categorias" value="hogar">
-                <label for="jugueteria">Juguetería</label>
-                <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria">
-                <label for="vida__sana">Vida sana</label>
-                <input type="checkbox" id="vida__sana" name="categorias" value="vida__sana">
-            </li>
-                <div>
-                        <p>
-                            <label for="contraseña">contraseña</label>
-                            <input type="password" id="contraseña" name="password"></input>
-                        <!-- campo para la contraseña -->
-                        </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="contraseña">Confirmar contraseña</label>
-                        <input type="password" id="contraseña" name="password"></input>
-                    <!-- campo para la contraseña -->
-                    </p>
-                </div>
-                <div>
-                    <button type="submit"><a href="/">Enviar</a></button>
-                    <button type="reset">Limpiar</button>
-                </div>
-                
-            </form>
-    </section>
+                </li>
+
+                <li class="register__main--nombreApellido">
+                    <label for="nombre__apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre__apellido" name="nombre__apellido" placeholder="Nombre y Apellido">
+                </li>
+
+                <li class="register__main--userName">
+                    <label for="user__name">Nombre de usuario:</label>
+                    <input type="text" id="user__name" name="user__name" placeholder="Nombre de usuario">
+                </li>
+
+                <li class="register__main--email">
+                    <label for="user__email">Email:</label>
+                    <input type="email" id="user__email" name="user__email" placeholder="Email">
+                </li>
+
+                <li class="register__main--fechaNacimiento">
+                    <label for="user__date">Fecha de nacimiento:</label>
+                    <input type="date" id="user__date" name="user__date">
+                </li>
+
+                <li class="register__main--userDomicilio">
+                    <label for="user__domicilio">Domicilio:</label>
+                    <input type="text" id="user__domicilio" name="user__domicilio" placeholder="Domicilio">
+                </li>
+
+                <li class="register__main--perfilUser">
+                    <label>Perfil del usuario:</label><br>
+                    <label for="comprar">Comprar</label>
+                    <input type="radio" id="comprar" name="perfil" value="comprar">
+                    <label for="vender">Vender</label>
+                    <input type="radio" id="vender" name="perfil" value="vender">
+                </li>
+
+                <li class="register__main--categoriasInteres">
+                    <label>Categoría de interés del usuario:</label><br>
+                    <label for="electro">Electro</label>
+                    <input type="checkbox" id="electro" name="categorias" value="electro">
+                    <label for="moda">Moda</label>
+                    <input type="checkbox" id="moda" name="categorias" value="moda">
+                    <label for="hogar">Hogar</label>
+                    <input type="checkbox" id="hogar" name="categorias" value="hogar">
+                    <label for="jugueteria">Juguetería</label>
+                    <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria">
+                    <label for="vida__sana">Vida sana</label>
+                    <input type="checkbox" id="vida__sana" name="categorias" value="vida__sana">
+                </li>
+                <li class="register__main--contraseña">
+                    <label for="user__contraseña">Contraseña:</label>
+                    <input type="password" id="user__contraseña" name="user__contraseña" placeholder="Contraseña">
+                </li>
+
+                <li class="register__main--confirmarContraseña">
+                    <label for="confirmar__contraseña">Confirmar contraseña:</label>
+                    <input type="password" id="confirmar__contraseña" name="confirmar__contraseña"
+                        placeholder="Confirmar contraseña">
+                </li>
+
+                <li class="register__main--botonBox">
+                    <button class="register__main--boton" type="submit"><a href="/">Enviar formulario</a></button>
+                    <button class="register__main--boton" type="reset">Resetear formulario</button>
+                </li>
+
+            </ul>
+        </form>
+    </main>
     <footer class="home_footer">
-
-        <article class="home_footer_paga">
-            <i class="fa-solid fa-credit-card"></i>
-            <h4 class="home_footer_paga_titulo">Pagá con tarjeta o en efectivo</h4>
-            <p class="home_footer_paga_p">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </article>
-
-
-        <article class="home_footer_envio">
-            <i class="fa-sharp fa-solid fa-gift"></i>
-            <h4 class="home_footer_envio--titulo">Envío gratis desde $ 2.500</h4>
-            <p class="home_footer_envio--p">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </article>
-
-
-        <article class="home_footer_seguridad">
-            <i class="fa-solid fa-user-shield"></i>
-            <h4 class="home_footer_seguridad--titulo">Seguridad, de principio a fin</h4>
-            <p class="home_footer_seguridad--p">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
-                hacer,
-                porque estás siempre protegid@.</p>
-        </article>
-
+        <div class="home__footer--gifter">
+            <article class="home_footer_paga">
+                <i class="fa-solid fa-credit-card"></i>
+                <h4 class="home_footer_paga_titulo">Pagá con tarjeta o en efectivo</h4>
+                <p class="home_footer_paga_p">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article class="home_footer_envio">
+                <i class="fa-sharp fa-solid fa-gift"></i>
+                <h4 class="home_footer_envio--titulo">Envío gratis desde $ 2.500</h4>
+                <p class="home_footer_envio--p">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </article>
+            <article class="home_footer_seguridad">
+                <i class="fa-solid fa-user-shield"></i>
+                <h4 class="home_footer_seguridad--titulo">Seguridad, de principio a fin</h4>
+                <p class="home_footer_seguridad--p">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+                    hacer,
+                    porque estás siempre protegid@.</p>
+            </article>
+        </div>
         <p class="home_footer_p">Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
     </footer>
 </body>
+
 </html>

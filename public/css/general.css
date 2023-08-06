@@ -7,6 +7,7 @@
   --colorGrisOscuro: #666;
   --colorGrisClaro: #ebebeb;
   --colorVerde: #39b54a;
+  --colorAzulClaro:#0022AA;
 }
 
 body.home {
@@ -25,4 +26,105 @@ li {
 }
 a {
   text-decoration: none;
+  color: black;
+}
+/*DIA Y NOCHE : FUNCIÓN DEL LOGO*/
+/*main*/
+body.dia .home--main {
+  background-color: rgb(248, 245, 245) !important;
+  color: #272727;
+}
+
+body.noche .home--main {
+  background-color: rgba(32, 31, 31, 0.5) !important;
+  color: #fcfafa;
+}
+
+body.dia .home--main h3 {
+  color: #272727;
+}
+
+body.noche .home--main h3 {
+  color: #fcfafa;
+}
+/*main - article*/
+
+body.dia .home__main__article {
+  background-color: rgba(248, 245, 245, 0.5) !important;
+  color: #272727;
+}
+
+body.noche .home__main__article {
+  background-color: rgba(32, 31, 31, 0.5) !important;
+  color: #fcfafa;
+}
+
+body.dia .home__main__section--article h4 {
+  color: #272727;
+}
+body.noche .home__main__section--article h4 {
+  color: #fcfafa !important;
+}
+
+/*footer*/
+body.dia .home_footer {
+  background-color: rgb(248, 245, 245) !important;
+  color: #272727;
+}
+
+body.noche .home_footer {
+  background-color: rgba(32, 31, 31, 0.5) !important;
+  color: #fcfafa;
+}
+body.dia .home_footer_paga_titulo {
+  color: #272727 !important;
+}
+
+body.noche .home_footer_paga_titulo {
+  color: #fcfafa !important;
+}
+body.dia .home_footer_paga_p {
+  color: #272727;
+}
+
+body.noche .home_footer_paga_p {
+  color: #fcfafa;
+}
+body.dia .home_footer_envio--titulo {
+  color: #272727 !important;
+}
+
+body.noche .home_footer_envio--titulo {
+  color: #fcfafa !important;
+}
+body.dia .home_footer_envio--p {
+  color: #272727;
+}
+
+body.noche .home_footer_envio--p {
+  color: #fcfafa;
+}
+
+body.dia .home_footer_seguridad--titulo {
+  color: #272727 !important;
+}
+
+body.noche .home_footer_seguridad--titulo {
+  color: #fcfafa !important;
+}
+
+body.dia .home_footer_seguridad--p {
+  color: #272727;
+}
+
+body.noche .home_footer_seguridad--p {
+  color: #fcfafa;
+}
+
+body.dia .home_footer_p {
+  color: #272727;
+}
+
+body.noche .home_footer_p {
+  color: #fcfafa;
 }
